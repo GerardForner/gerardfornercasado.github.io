@@ -30,7 +30,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #00FF00; /* Cambia el color a verde al pasar el ratón */
+    color: #78866B; /* Verde caqui al pasar el ratón */
 }
 
 /* Encabezado */
@@ -54,7 +54,7 @@ nav ul li a:hover {
 
 .header-image h2 {
     font-size: 24px;
-    color: #00FF00; /* Verde para el título de Data Analyst */
+    color: #78866B; /* Verde caqui para el título de Data Analyst */
 }
 
 /* Sección en Blanco */
@@ -72,7 +72,7 @@ nav ul li a:hover {
 
 .left h2 {
     font-size: 32px;
-    color: #00FF00; /* Color verde */
+    color: #78866B; /* Verde caqui */
 }
 
 .description {
@@ -98,7 +98,7 @@ nav ul li a:hover {
 
 .right h4 {
     font-size: 14px;
-    color: #00FF00; /* Verde para la edad */
+    color: #78866B; /* Verde caqui para la edad */
 }
 
 /* Pie de página */
@@ -113,4 +113,3 @@ footer p {
     margin: 0;
     font-size: 14px;
 }
-
