@@ -1,75 +1,98 @@
-/* Estilos generales */
-body {
-    font-family: 'Arial', sans-serif; /* Tipografía básica */
-    line-height: 1.6; /* Espaciado entre líneas */
-    margin: 0; /* Sin margen en el body */
-    padding: 0; /* Sin padding en el body */
-    background-color: #f4f4f4; /* Color de fondo */
-    color: #333; /* Color de texto */
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi CV - Gerard Forner Casado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gerard Forner Casado</h1>
+        <p>Data Analyst</p>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-/* Encabezado */
-header {
-    background: #007bff; /* Color de fondo del encabezado */
-    color: #ffffff; /* Color del texto del encabezado */
-    padding: 20px 0; /* Espaciado */
-    text-align: center; /* Centrar el texto */
-}
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>Having a background in business administration, combined with a specialization on the data analytics field, I am looking forward to align client needs with the disruption of new technologies to guide firms into their digital transformation process.</p>
+    </section>
 
-/* Navegación */
-nav ul {
-    list-style: none; /* Sin viñetas */
-    padding: 0; /* Sin padding */
-}
+    <section id="experiencia">
+        <h2>Experiencia Laboral</h2>
+        <ul>
+            <li>[Nombre de la Empresa] - [Cargo] (Fecha Inicio - Fecha Fin)</li>
+            <li>[Descripción de tus responsabilidades y logros]</li>
+            <!-- Repite para otras experiencias -->
+        </ul>
+    </section>
 
-nav ul li {
-    display: inline; /* Elementos en línea */
-    margin: 0 15px; /* Margen entre elementos */
-}
+    <section id="educacion">
+        <h2>Educación</h2>
+        <ul>
+            <li>[Nombre de la Institución] - [Título] (Fecha de Graduación)</li>
+            <li>Máster en Data Science - [Nombre de la Institución] (Septiembre 2023 - Actualidad)</li>
+            <li>Learning different data languages and tools: Python, R, SQL, Jupyter Notebook, Oracle/VirtualBox, Apache/Spark.</li>
+            <li>Nanotraining en Big Data y Machine Learning - Universidad de Nebrija (08 de enero - 09 de septiembre de 2023)</li>
+            <li>Curso intensivo que cubre fundamentos de Big Data y Machine Learning, incluyendo prácticas en Python y SQL, así como conceptos avanzados en procesamiento de datos y algoritmos de machine learning.</li>
+            <!-- Repite para otras instituciones -->
+        </ul>
+    </section>
 
-nav ul li a {
-    color: #ffffff; /* Color del enlace */
-    text-decoration: none; /* Sin subrayado */
-}
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <h3>Tecnologías</h3>
+        <ul>
+            <li>Python, R, SQL</li>
+            <li>MySQL, Oracle VirtualBox</li>
+            <li>VSCode, RStudio, Jupyter Notebook</li>
+            <li>SQL y NoSQL Databases</li>
+            <li>Excel</li>
+            <li>Windows, Linux</li>
+        </ul>
+        <h3>Idiomas</h3>
+        <ul>
+            <li>Español y Catalán: Nativo</li>
+            <li>Inglés: C1</li>
+            <li>Alemán: A2</li>
+            <li>Francés: A2</li>
+        </ul>
+        <h3>Competencias</h3>
+        <ul>
+            <li>Trabajo en equipo</li>
+            <li>Compromiso</li>
+            <li>Autogestión</li>
+            <li>Capacidad de aprendizaje</li>
+        </ul>
+    </section>
 
-nav ul li a:hover {
-    text-decoration: underline; /* Subrayado al pasar el mouse */
-}
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <ul>
+            <li>[Nombre del Proyecto] - [Descripción breve]</li>
+            <!-- Repite para otros proyectos -->
+        </ul>
+    </section>
 
-/* Secciones */
-section {
-    background: #ffffff; /* Color de fondo de las secciones */
-    margin: 20px; /* Margen alrededor de las secciones */
-    padding: 20px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra */
-}
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Barcelona 08030</p>
+        <p>Teléfono: +34 609 314 798</p>
+        <p>Email: <a href="mailto:gerardfornercasado@gmail.com">gerardfornercasado@gmail.com</a></p>
+        <p>LinkedIn: <a href="[tu enlace de LinkedIn]">[tu perfil de LinkedIn]</a></p>
+    </section>
 
-/* Títulos de sección */
-h2 {
-    color: #007bff; /* Color de los títulos de sección */
-    border-bottom: 2px solid #007bff; /* Línea debajo del título */
-    padding-bottom: 5px; /* Espaciado debajo del título */
-}
-
-/* Lista de habilidades */
-ul {
-    margin: 0; /* Sin margen */
-    padding: 0; /* Sin padding */
-}
-
-/* Pie de página */
-footer {
-    text-align: center; /* Centrar el texto */
-    padding: 10px; /* Espaciado interno */
-    background: #007bff; /* Color de fondo del pie de página */
-    color: #ffffff; /* Color del texto del pie de página */
-}
-
-/* Estilos responsivos */
-@media (max-width: 600px) {
-    nav ul li {
-        display: block; /* Cambiar a bloque en pantallas pequeñas */
-        margin: 10px 0; /* Margen vertical */
-    }
-}
+    <footer>
+        <p>&copy; 2024 Gerard Forner Casado. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
