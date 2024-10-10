@@ -5,88 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My CV - Gerard Forner Casado</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Estilo CSS para el CV */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        
-        header {
-            background-color: #007BFF; /* Azul */
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .profile-image {
-            width: 150px;
-            height: auto;
-            border-radius: 50%;
-            border: 3px solid white;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        section {
-            padding: 20px;
-            margin: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            color: #007BFF; /* Azul */
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #007BFF; /* Azul */
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        /* Gráficos y visualizaciones */
-        .visualization {
-            border: 2px dashed #007BFF;
-            padding: 10px;
-            margin: 10px 0;
-            background-color: #e9f0ff;
-        }
-
-        /* Estilos para los enlaces en la sección de proyectos */
-        .project-link {
-            color: #007BFF;
-            text-decoration: underline;
-        }
-    </style>
 </head>
 <body>
+
     <header>
-        <img src="profile_photo.jpg" alt="Gerard Forner Casado" class="profile-image">
+        <img src="Profile Photo.jpg" alt="Profile Photo" class="profile-image"> <!-- Cambia la ruta si es necesario -->
         <h1>Gerard Forner Casado</h1>
         <p>Data Analyst</p>
+        <p class="description">Acquired a solid understanding of Big Data and Machine Learning fundamentals and advancements.</p>
         <nav>
             <ul>
                 <li><a href="#about-me">About Me</a></li>
@@ -101,67 +27,61 @@
 
     <section id="about-me">
         <h2>About Me</h2>
-        <p>I am passionate about transforming data into actionable insights, with a strong foundation in business administration and specialized training in data analytics. My goal is to leverage new technologies to drive digital transformation and optimize decision-making in organizations.</p>
+        <p>Having a background in business administration, combined with a specialization in the data analytics field...</p>
     </section>
 
     <section id="experience">
-        <h2>Work Experience</h2>
+        <h2>Experience</h2>
         <ul>
-            <li><strong>Data Analyst Trainee - Air Products</strong> (Jan 2024 - Jul 2024)</li>
-            <li>Intern in the data analytics department supporting the internal audit team.</li>
-            <li>Developed data automation applications and generated relevant visual graphics for the department using Qlik Sense.</li>
-            <li>Leveraged Audit Command Language, Excel, and SAP to highlight non-compliance processes.</li>
-            <li>Used AuditBoard to validate information in internal audit processes and DataSnipper for data extraction.</li>
-            <li><strong>IT Recruitment Consultant - Ferchau Spain S.L.U.</strong> (Oct 2021 - Oct 2023)</li>
-            <li>Conducted active searches for data scientists, data engineers, and data analysts.</li>
-            <li>Gathered requirements with project managers.</li>
-            <li>Participated in technical interviews with our engineering team.</li>
-            <li>Completed a course on core IT technologies.</li>
-            <li>Utilized Salesforce for engaging with current users, leads, and existing customers.</li>
+            <li>Data Analyst Trainee - Air Products (01/2024 - 07/2024)</li>
+            <li>IT Recruitment Consultant - Ferchau Spain S.L.U. (10/2021 - 10/2023)</li>
+            <!-- Repite para otras experiencias -->
         </ul>
     </section>
 
     <section id="education">
         <h2>Education</h2>
         <ul>
-            <li><strong>Bachelor of Business Administration</strong> - Universitat Autònoma de Barcelona (Sep 2017 - May 2021)</li>
-            <li>Statistics, Econometrics, and Information Systems. Final Degree Project: The influence of black soccer players on racism in Italy. Technology Stack: R and R Studio.</li>
-            <li><strong>Master in Data Science</strong> - Universitat Oberta de Catalunya (Sep 2023 - Present)</li>
-            <li>Acquired a solid understanding of Big Data and Machine Learning fundamentals. Explored key concepts such as the three V's of Big Data (volume, velocity, variety) and advancements in data management.</li>
+            <li>Bachelor of Business Administration - Universitat Autònoma de Barcelona (09/2017 - 05/2021)</li>
+            <li>Master in Data Science - Universitat Oberta de Catalunya (2023 - Present)</li>
+            <!-- Repite para otras instituciones -->
         </ul>
     </section>
 
     <section id="skills">
         <h2>Skills</h2>
         <ul>
-            <li>Python, R, SQL</li>
-            <li>VSCode, RStudio, Jupyter Notebook</li>
-            <li>MySQL, Oracle VirtualBox, Apache/Spark</li>
-            <li>Excel</li>
-            <li>Languages: Spanish and Catalan (Native), English (C1), German (A2), French (A2)</li>
-            <li>Competencies: teamwork, commitment, self-management, and adaptability</li>
+            <li>Python</li>
+            <li>R</li>
+            <li>SQL</li>
+            <li>MySQL</li>
+            <li>Oracle Virtual Box</li>
+            <li>Windows</li>
+            <li>Linux</li>
+            <!-- Repite para otras habilidades -->
         </ul>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <div class="visualization">
-            <h3>Project Name: [Insert Project Name]</h3>
-            <p>[Brief Description of the Project, including tools used and insights gained. You can also provide a link if applicable: <a href="#" class="project-link">View Project</a>]</p>
-        </div>
-        <!-- Repeat the above div for other projects -->
+        <ul>
+            <li>[Project Name] - [Brief Description]</li>
+            <!-- Repite para otros proyectos -->
+        </ul>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>Address: Barcelona 08030</p>
-        <p>Phone: +34 609 314 798</p>
         <p>Email: <a href="mailto:gerardfornercasado@gmail.com">gerardfornercasado@gmail.com</a></p>
-        <p>LinkedIn: <a href="[your LinkedIn link]">[your LinkedIn profile]</a></p>
+        <p>Phone: +34 609 314 798</p>
+        <p>Location: Barcelona 08030</p>
+        <p>LinkedIn: <a href="[your LinkedIn link]">[Your LinkedIn Profile]</a></p>
     </section>
 
     <footer>
         <p>&copy; 2024 Gerard Forner Casado. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
+
