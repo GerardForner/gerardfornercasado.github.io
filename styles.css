@@ -121,7 +121,7 @@ main {
 
 /* Estilo del pie de página */
 footer {
-    background-color: black; /* Color negro */
+    background-color: rgba(0, 0, 0, 0.9); /* Negro mate con un poco de transparencia */
     color: white; /* Texto blanco */
     text-align: center; /* Alinea el texto al centro */
     padding: 20px; /* Espaciado dentro del pie de página */
