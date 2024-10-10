@@ -1,75 +1,56 @@
-/* Estilos generales */
 body {
-    font-family: 'Arial', sans-serif; /* Tipografía básica */
+    font-family: Arial, sans-serif; /* Tipografía general */
     line-height: 1.6; /* Espaciado entre líneas */
-    margin: 0; /* Sin margen en el body */
-    padding: 0; /* Sin padding en el body */
+    margin: 0; /* Margen en el cuerpo */
+    padding: 0; /* Relleno en el cuerpo */
     background-color: #f4f4f4; /* Color de fondo */
-    color: #333; /* Color de texto */
 }
 
-/* Encabezado */
 header {
-    background: #007bff; /* Color de fondo del encabezado */
-    color: #ffffff; /* Color del texto del encabezado */
-    padding: 20px 0; /* Espaciado */
-    text-align: center; /* Centrar el texto */
+    text-align: center; /* Centra el contenido */
+    background: #007bff; /* Color de fondo del header */
+    color: white; /* Color del texto en el header */
+    padding: 20px; /* Relleno en el header */
 }
 
-/* Navegación */
+.profile-image {
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
+
 nav ul {
-    list-style: none; /* Sin viñetas */
-    padding: 0; /* Sin padding */
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0; /* Relleno en la lista */
 }
 
 nav ul li {
-    display: inline; /* Elementos en línea */
-    margin: 0 15px; /* Margen entre elementos */
+    display: inline; /* Muestra los elementos en línea */
+    margin: 0 15px; /* Espaciado entre los elementos */
 }
 
-nav ul li a {
-    color: #ffffff; /* Color del enlace */
-    text-decoration: none; /* Sin subrayado */
+nav a {
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
 }
 
-nav ul li a:hover {
-    text-decoration: underline; /* Subrayado al pasar el mouse */
+nav a:hover {
+    text-decoration: underline; /* Subraya los enlaces al pasar el ratón */
 }
 
-/* Secciones */
 section {
-    background: #ffffff; /* Color de fondo de las secciones */
-    margin: 20px; /* Margen alrededor de las secciones */
-    padding: 20px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra */
+    margin: 20px; /* Margen entre secciones */
+    padding: 15px; /* Relleno en las secciones */
+    background: white; /* Color de fondo de las secciones */
+    border-radius: 8px; /* Esquinas redondeadas */
 }
 
-/* Títulos de sección */
-h2 {
-    color: #007bff; /* Color de los títulos de sección */
-    border-bottom: 2px solid #007bff; /* Línea debajo del título */
-    padding-bottom: 5px; /* Espaciado debajo del título */
-}
-
-/* Lista de habilidades */
-ul {
-    margin: 0; /* Sin margen */
-    padding: 0; /* Sin padding */
-}
-
-/* Pie de página */
 footer {
-    text-align: center; /* Centrar el texto */
-    padding: 10px; /* Espaciado interno */
-    background: #007bff; /* Color de fondo del pie de página */
-    color: #ffffff; /* Color del texto del pie de página */
-}
-
-/* Estilos responsivos */
-@media (max-width: 600px) {
-    nav ul li {
-        display: block; /* Cambiar a bloque en pantallas pequeñas */
-        margin: 10px 0; /* Margen vertical */
-    }
+    text-align: center; /* Centra el contenido del footer */
+    padding: 10px; /* Relleno en el footer */
+    background: #007bff; /* Color de fondo del footer */
+    color: white; /* Color del texto en el footer */
+    position: relative; /* Posición relativa para el footer */
+    bottom: 0; /* Al fondo */
+    width: 100%; /* Ancho completo */
 }
