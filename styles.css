@@ -13,9 +13,9 @@ body {
 .index {
     list-style: none; /* Quita los estilos de lista */
     display: flex; /* Muestra los elementos en fila */
-    justify-content: center; /* Centra horizontalmente */
-    background-color: #0056b3; /* Color de fondo del índice */
-    padding: 10px 0; /* Espaciado vertical */
+    justify-content: flex-start; /* Alinea a la izquierda */
+    background-color: transparent; /* Sin color de fondo */
+    padding: 10px 20px; /* Espaciado */
 }
 
 .index li {
@@ -23,7 +23,7 @@ body {
 }
 
 .index a {
-    color: white; /* Color del texto */
+    color: black; /* Color del texto negro */
     text-decoration: none; /* Quita el subrayado */
     font-weight: 700; /* Texto en negrita */
 }
@@ -121,7 +121,7 @@ main {
 
 /* Estilo del pie de página */
 footer {
-    background-color: #003366; /* Azul oscuro */
+    background-color: black; /* Color negro */
     color: white; /* Texto blanco */
     text-align: center; /* Alinea el texto al centro */
     padding: 20px; /* Espaciado dentro del pie de página */
