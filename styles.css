@@ -1,5 +1,5 @@
 /* Reseteo de estilos básicos */
-body, h2, p {
+body, h1, h2, p {
     margin: 0;
     padding: 0;
 }
@@ -9,22 +9,43 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Estilo para el header */
+.header-content {
+    position: relative; /* Para posicionar el nombre y posición sobre la imagen */
+}
+
 /* Estilo para el wallpaper */
 .wallpaper {
     width: 100%; /* Hace que la imagen ocupe todo el ancho de la página */
-    height: 200px; /* Ajusta la altura de la imagen del wallpaper */
+    height: 250px; /* Ajusta la altura de la imagen del wallpaper */
     object-fit: cover; /* Asegura que la imagen se recorte correctamente */
+}
+
+/* Estilo para el nombre y la posición */
+.name-position {
+    position: absolute; /* Permite superponer el texto sobre el wallpaper */
+    left: 20px; /* Espacio desde el lado izquierdo */
+    bottom: 20px; /* Espacio desde la parte inferior */
+    color: black; /* Color del nombre */
+}
+
+.name-position h1 {
+    font-size: 36px; /* Tamaño del nombre */
+}
+
+.name-position h2 {
+    font-size: 24px; /* Tamaño de la posición */
+    color: #0056b3; /* Color azul para la posición */
 }
 
 /* Estilos para la sección de descripción */
 main {
     display: flex; /* Para alinear el contenido */
-    justify-content: center; /* Centra el contenido horizontalmente */
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
     align-items: center; /* Centra el contenido verticalmente */
-    height: 250px; /* Altura del área de descripción (ajustado) */
+    height: calc(40vh); /* Altura del área de descripción (40%) */
     padding: 20px; /* Espacio alrededor del contenido */
     background-color: white; /* Fondo blanco */
-    position: relative; /* Para posicionar el perfil */
 }
 
 /* Estilo para el texto y la foto de perfil */
@@ -35,19 +56,17 @@ main {
 }
 
 .profile-photo {
-    width: 150px; /* Ancho de la imagen del perfil */
-    height: 150px; /* Alto de la imagen del perfil */
+    width: 130px; /* Ancho de la imagen del perfil */
+    height: 130px; /* Alto de la imagen del perfil */
     border-radius: 50%; /* Hace que la imagen sea redonda */
-    position: absolute; /* Posiciona la imagen en el lugar correcto */
-    right: 20px; /* Alinea a la derecha */
-    top: 20px; /* Espaciado desde la parte superior */
+    margin-left: 20px; /* Mueve la imagen un poco a la izquierda */
 }
 
 /* Estilo del pie de página */
 footer {
-    background-color: blue; /* Fondo azul */
+    background-color: #003366; /* Azul oscuro */
     color: white; /* Texto blanco */
     text-align: center; /* Alinea el texto al centro */
     padding: 20px; /* Espaciado dentro del pie de página */
-    height: 100px; /* Aumenta la altura del pie de página */
+    height: calc(20vh); /* Altura del pie de página (20%) */
 }
