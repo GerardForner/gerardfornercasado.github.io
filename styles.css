@@ -6,7 +6,26 @@ body, h1, h2, p {
 
 /* Estilos del cuerpo */
 body {
-    font-family: 'Roboto', sans-serif; /* Cambia la fuente a Roboto */
+    font-family: 'Poppins', sans-serif; /* Cambia la fuente a Poppins */
+}
+
+/* Estilos del índice */
+.index {
+    list-style: none; /* Quita los estilos de lista */
+    display: flex; /* Muestra los elementos en fila */
+    justify-content: center; /* Centra horizontalmente */
+    background-color: #0056b3; /* Color de fondo del índice */
+    padding: 10px 0; /* Espaciado vertical */
+}
+
+.index li {
+    margin: 0 20px; /* Espaciado entre elementos */
+}
+
+.index a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado */
+    font-weight: 700; /* Texto en negrita */
 }
 
 /* Estilo para el header */
@@ -17,7 +36,7 @@ body {
 /* Estilo para el wallpaper */
 .wallpaper {
     width: 100%; /* Hace que la imagen ocupe todo el ancho de la página */
-    height: 250px; /* Ajusta la altura de la imagen del wallpaper */
+    height: 200px; /* Ajusta la altura de la imagen del wallpaper */
     object-fit: cover; /* Asegura que la imagen se recorte correctamente */
 }
 
@@ -43,11 +62,11 @@ main {
     display: flex; /* Para alinear el contenido */
     justify-content: center; /* Centra el contenido horizontalmente */
     align-items: flex-start; /* Alinea el contenido en la parte superior */
-    height: calc(40vh); /* Altura del área de descripción (40%) */
+    height: calc(55vh); /* Altura del área de descripción (55%) */
     padding: 20px; /* Espacio alrededor del contenido */
 }
 
-/* Estilo para el texto y la foto de perfil */
+/* Estilo para la parte de descripción */
 .description {
     display: flex; /* Usa flexbox para dividir en dos partes */
     flex: 1; /* Ocupa el espacio disponible */
@@ -66,30 +85,38 @@ main {
     font-size: 28px; /* Tamaño del eslogan */
 }
 
+/* Estilo para el texto ajustado */
+.description-text {
+    text-align: justify; /* Justifica el texto */
+}
+
 /* Estilo para la parte derecha */
 .right-side {
-    flex: 1; /* Ocupa 1 parte del espacio */
+    flex: 2; /* Ocupa 2 partes del espacio */
     display: flex; /* Flexbox para alinear el contenido */
     flex-direction: column; /* Organiza verticalmente */
     align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
 }
 
 .profile-photo {
     width: 130px; /* Ancho de la imagen del perfil */
     height: 130px; /* Alto de la imagen del perfil */
     border-radius: 50%; /* Hace que la imagen sea redonda */
-    margin-bottom: 10px; /* Espacio inferior */
+    margin-top: 10px; /* Espacio superior */
 }
 
 /* Estilo para ubicación y edad */
 .location {
     color: black; /* Color negro para la ubicación */
     font-size: 18px; /* Tamaño del texto */
+    text-align: center; /* Centra el texto */
 }
 
 .age {
     color: #0056b3; /* Color azul para la edad */
     font-size: 14px; /* Tamaño pequeño */
+    text-align: center; /* Centra el texto */
 }
 
 /* Estilo del pie de página */
@@ -98,5 +125,5 @@ footer {
     color: white; /* Texto blanco */
     text-align: center; /* Alinea el texto al centro */
     padding: 20px; /* Espaciado dentro del pie de página */
-    height: calc(30vh); /* Altura del pie de página (30%) */
+    height: calc(20vh); /* Altura del pie de página (20%) */
 }
