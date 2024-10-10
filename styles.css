@@ -12,7 +12,8 @@ body {
 /* Estilo para el wallpaper */
 .wallpaper {
     width: 100%; /* Hace que la imagen ocupe todo el ancho de la página */
-    height: auto; /* Mantiene la relación de aspecto */
+    height: 200px; /* Ajusta la altura de la imagen del wallpaper */
+    object-fit: cover; /* Asegura que la imagen se recorte correctamente */
 }
 
 /* Estilos para la sección de descripción */
@@ -20,7 +21,7 @@ main {
     display: flex; /* Para alinear el contenido */
     justify-content: center; /* Centra el contenido horizontalmente */
     align-items: center; /* Centra el contenido verticalmente */
-    height: 400px; /* Altura fija para el área de descripción */
+    height: 250px; /* Altura del área de descripción (ajustado) */
     padding: 20px; /* Espacio alrededor del contenido */
     background-color: white; /* Fondo blanco */
     position: relative; /* Para posicionar el perfil */
@@ -47,5 +48,6 @@ footer {
     background-color: blue; /* Fondo azul */
     color: white; /* Texto blanco */
     text-align: center; /* Alinea el texto al centro */
-    padding: 10px; /* Espaciado dentro del pie de página */
+    padding: 20px; /* Espaciado dentro del pie de página */
+    height: 100px; /* Aumenta la altura del pie de página */
 }
