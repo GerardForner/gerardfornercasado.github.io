@@ -5,10 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My CV - Gerard Forner Casado</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo CSS para el CV */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #007BFF; /* Azul */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #007BFF; /* Azul */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF; /* Azul */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Gráficos y visualizaciones */
+        .visualization {
+            border: 2px dashed #007BFF;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #e9f0ff;
+        }
+
+        /* Estilos para los enlaces en la sección de proyectos */
+        .project-link {
+            color: #007BFF;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <!-- Imagen de perfil -->
         <img src="profile_photo.jpg" alt="Gerard Forner Casado" class="profile-image">
         <h1>Gerard Forner Casado</h1>
         <p>Data Analyst</p>
@@ -26,7 +101,7 @@
 
     <section id="about-me">
         <h2>About Me</h2>
-        <p>Having a background in business administration, combined with a specialization in the data analytics field, I am looking forward to aligning client needs with the disruption of new technologies to guide firms into their digital transformation process.</p>
+        <p>I am passionate about transforming data into actionable insights, with a strong foundation in business administration and specialized training in data analytics. My goal is to leverage new technologies to drive digital transformation and optimize decision-making in organizations.</p>
     </section>
 
     <section id="experience">
@@ -34,15 +109,15 @@
         <ul>
             <li><strong>Data Analyst Trainee - Air Products</strong> (Jan 2024 - Jul 2024)</li>
             <li>Intern in the data analytics department supporting the internal audit team.</li>
-            <li>Developing data automation applications and generating relevant visual graphics for the department using Qlik Sense.</li>
-            <li>Leveraging Audit Command Language, Excel, and SAP to highlight non-compliance processes.</li>
-            <li>Using AuditBoard to validate information in internal audit processes and DataSnipper for data extraction.</li>
+            <li>Developed data automation applications and generated relevant visual graphics for the department using Qlik Sense.</li>
+            <li>Leveraged Audit Command Language, Excel, and SAP to highlight non-compliance processes.</li>
+            <li>Used AuditBoard to validate information in internal audit processes and DataSnipper for data extraction.</li>
             <li><strong>IT Recruitment Consultant - Ferchau Spain S.L.U.</strong> (Oct 2021 - Oct 2023)</li>
-            <li>Active search for data scientists, data engineers, and data analysts.</li>
-            <li>Requirements gathering with project managers.</li>
-            <li>Participation in technical interviews with our engineering team.</li>
+            <li>Conducted active searches for data scientists, data engineers, and data analysts.</li>
+            <li>Gathered requirements with project managers.</li>
+            <li>Participated in technical interviews with our engineering team.</li>
             <li>Completed a course on core IT technologies.</li>
-            <li>Using Salesforce for engaging with current users, leads, and existing customers.</li>
+            <li>Utilized Salesforce for engaging with current users, leads, and existing customers.</li>
         </ul>
     </section>
 
@@ -70,10 +145,11 @@
 
     <section id="projects">
         <h2>Projects</h2>
-        <ul>
-            <li>[Project Name] - [Brief Description]</li>
-            <!-- Repeat for other projects -->
-        </ul>
+        <div class="visualization">
+            <h3>Project Name: [Insert Project Name]</h3>
+            <p>[Brief Description of the Project, including tools used and insights gained. You can also provide a link if applicable: <a href="#" class="project-link">View Project</a>]</p>
+        </div>
+        <!-- Repeat the above div for other projects -->
     </section>
 
     <section id="contact">
