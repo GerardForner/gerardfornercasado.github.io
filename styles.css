@@ -1,37 +1,75 @@
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif; /* Tipografía básica */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin: 0; /* Sin margen en el body */
+    padding: 0; /* Sin padding en el body */
+    background-color: #f4f4f4; /* Color de fondo */
+    color: #333; /* Color de texto */
 }
 
+/* Encabezado */
 header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    background: #007bff; /* Color de fondo del encabezado */
+    color: #ffffff; /* Color del texto del encabezado */
+    padding: 20px 0; /* Espaciado */
+    text-align: center; /* Centrar el texto */
 }
 
+/* Navegación */
 nav ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    display: inline; /* Elementos en línea */
+    margin: 0 15px; /* Margen entre elementos */
 }
 
+nav ul li a {
+    color: #ffffff; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Secciones */
 section {
-    padding: 20px;
-    background: #fff;
-    margin: 10px 0;
-    border-radius: 5px;
+    background: #ffffff; /* Color de fondo de las secciones */
+    margin: 20px; /* Margen alrededor de las secciones */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra */
 }
 
+/* Títulos de sección */
+h2 {
+    color: #007bff; /* Color de los títulos de sección */
+    border-bottom: 2px solid #007bff; /* Línea debajo del título */
+    padding-bottom: 5px; /* Espaciado debajo del título */
+}
+
+/* Lista de habilidades */
+ul {
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin padding */
+}
+
+/* Pie de página */
 footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #333;
-    color: #fff;
+    text-align: center; /* Centrar el texto */
+    padding: 10px; /* Espaciado interno */
+    background: #007bff; /* Color de fondo del pie de página */
+    color: #ffffff; /* Color del texto del pie de página */
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Cambiar a bloque en pantallas pequeñas */
+        margin: 10px 0; /* Margen vertical */
+    }
 }
