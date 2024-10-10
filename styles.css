@@ -45,21 +45,37 @@ main {
     align-items: center; /* Centra el contenido verticalmente */
     height: calc(40vh); /* Altura del área de descripción (40%) */
     padding: 20px; /* Espacio alrededor del contenido */
-    background-color: white; /* Fondo blanco */
 }
 
 /* Estilo para el texto y la foto de perfil */
 .description {
-    flex: 1; /* Toma el espacio disponible */
+    flex: 3; /* Toma el 30% del espacio */
     max-width: 600px; /* Ancho máximo */
     text-align: left; /* Alinea el texto a la izquierda */
+    padding-right: 20px; /* Espacio a la derecha para la imagen */
+}
+
+.slogan {
+    color: #0056b3; /* Color azul */
+    font-size: 28px; /* Tamaño del eslogan */
 }
 
 .profile-photo {
     width: 130px; /* Ancho de la imagen del perfil */
     height: 130px; /* Alto de la imagen del perfil */
     border-radius: 50%; /* Hace que la imagen sea redonda */
-    margin-left: 20px; /* Mueve la imagen un poco a la izquierda */
+}
+
+/* Estilo para ubicación y edad */
+.location {
+    color: black; /* Color negro para la ubicación */
+    font-size: 18px; /* Tamaño del texto */
+    margin: 5px 0; /* Espacio superior e inferior */
+}
+
+.age {
+    color: #0056b3; /* Color azul para la edad */
+    font-size: 14px; /* Tamaño pequeño */
 }
 
 /* Estilo del pie de página */
@@ -68,5 +84,5 @@ footer {
     color: white; /* Texto blanco */
     text-align: center; /* Alinea el texto al centro */
     padding: 20px; /* Espaciado dentro del pie de página */
-    height: calc(20vh); /* Altura del pie de página (20%) */
+    height: calc(30vh); /* Altura del pie de página (30%) */
 }
