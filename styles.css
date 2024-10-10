@@ -1,129 +1,116 @@
-/* Reseteo de estilos básicos */
-body, h1, h2, p {
+/* General */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Índice de Navegación */
+nav {
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo negro mate */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 
-/* Estilos del cuerpo */
-body {
-    font-family: 'Poppins', sans-serif; /* Cambia la fuente a Poppins */
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-/* Estilos del índice */
-.index {
-    list-style: none; /* Quita los estilos de lista */
-    display: flex; /* Muestra los elementos en fila */
-    justify-content: flex-start; /* Alinea a la izquierda */
-    background-color: transparent; /* Sin color de fondo */
-    padding: 10px 20px; /* Espaciado */
+nav ul li a {
+    color: white; /* Letras en blanco */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.index li {
-    margin: 0 20px; /* Espaciado entre elementos */
+nav ul li a:hover {
+    color: #00FF00; /* Cambia el color a verde al pasar el ratón */
 }
 
-.index a {
-    color: black; /* Color del texto negro */
-    text-decoration: none; /* Quita el subrayado */
-    font-weight: 700; /* Texto en negrita */
+/* Encabezado */
+.header-image {
+    background-image: url('wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 250px; /* Ajusta según sea necesario */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-/* Estilo para el header */
-.header-content {
-    position: relative; /* Para posicionar el nombre y posición sobre la imagen */
+.header-image h1 {
+    font-size: 36px;
+    color: black;
+    margin: 0;
 }
 
-/* Estilo para el wallpaper */
-.wallpaper {
-    width: 100%; /* Hace que la imagen ocupe todo el ancho de la página */
-    height: 200px; /* Ajusta la altura de la imagen del wallpaper */
-    object-fit: cover; /* Asegura que la imagen se recorte correctamente */
+.header-image h2 {
+    font-size: 24px;
+    color: #00FF00; /* Verde para el título de Data Analyst */
 }
 
-/* Estilo para el nombre y la posición */
-.name-position {
-    position: absolute; /* Permite superponer el texto sobre el wallpaper */
-    left: 20px; /* Espacio desde el lado izquierdo */
-    bottom: 20px; /* Espacio desde la parte inferior */
-    color: black; /* Color del nombre */
+/* Sección en Blanco */
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    height: 350px;
 }
 
-.name-position h1 {
-    font-size: 36px; /* Tamaño del nombre */
+.left {
+    width: 55%;
 }
 
-.name-position h2 {
-    font-size: 24px; /* Tamaño de la posición */
-    color: green; /* Color verde para la posición */
+.left h2 {
+    font-size: 32px;
+    color: #00FF00; /* Color verde */
 }
 
-/* Estilos para la sección de descripción */
-main {
-    display: flex; /* Para alinear el contenido */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: flex-start; /* Alinea el contenido en la parte superior */
-    height: calc(55vh); /* Altura del área de descripción (55%) */
-    padding: 20px; /* Espacio alrededor del contenido */
-}
-
-/* Estilo para la parte de descripción */
 .description {
-    display: flex; /* Usa flexbox para dividir en dos partes */
-    flex: 1; /* Ocupa el espacio disponible */
-    max-width: 800px; /* Ancho máximo */
-    text-align: left; /* Alinea el texto a la izquierda */
+    text-align: justify; /* Texto justificado */
 }
 
-/* Estilo para la parte izquierda */
-.left-side {
-    flex: 3; /* Ocupa 3 partes del espacio */
-    padding-right: 20px; /* Espacio a la derecha */
-}
-
-.slogan {
-    color: green; /* Color verde */
-    font-size: 28px; /* Tamaño del eslogan */
-}
-
-/* Estilo para el texto ajustado */
-.description-text {
-    text-align: justify; /* Justifica el texto */
-}
-
-/* Estilo para la parte derecha */
-.right-side {
-    flex: 2; /* Ocupa 2 partes del espacio */
-    display: flex; /* Flexbox para alinear el contenido */
-    flex-direction: column; /* Organiza verticalmente */
-    align-items: center; /* Centra horizontalmente */
-    justify-content: center; /* Centra verticalmente */
+.right {
+    width: 35%;
+    text-align: center;
 }
 
 .profile-photo {
-    width: 130px; /* Ancho de la imagen del perfil */
-    height: 130px; /* Alto de la imagen del perfil */
-    border-radius: 50%; /* Hace que la imagen sea redonda */
-    margin-top: 10px; /* Espacio superior */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-/* Estilo para ubicación y edad */
-.location {
-    color: black; /* Color negro para la ubicación */
-    font-size: 18px; /* Tamaño del texto */
-    text-align: center; /* Centra el texto */
+.right h3 {
+    font-size: 18px;
+    color: black;
 }
 
-.age {
-    color: green; /* Color verde para la edad */
-    font-size: 14px; /* Tamaño pequeño */
-    text-align: center; /* Centra el texto */
+.right h4 {
+    font-size: 14px;
+    color: #00FF00; /* Verde para la edad */
 }
 
-/* Estilo del pie de página */
+/* Pie de página */
 footer {
-    background-color: rgba(0, 0, 0, 0.9); /* Negro mate con un poco de transparencia */
-    color: white; /* Texto blanco */
-    text-align: center; /* Alinea el texto al centro */
-    padding: 20px; /* Espaciado dentro del pie de página */
-    height: calc(20vh); /* Altura del pie de página (20%) */
+    background-color: rgba(0, 0, 0, 0.9); /* Negro mate */
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
