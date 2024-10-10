@@ -54,7 +54,7 @@ body {
 
 .name-position h2 {
     font-size: 24px; /* Tamaño de la posición */
-    color: #0056b3; /* Color azul para la posición */
+    color: green; /* Color verde para la posición */
 }
 
 /* Estilos para la sección de descripción */
@@ -81,7 +81,7 @@ main {
 }
 
 .slogan {
-    color: #0056b3; /* Color azul */
+    color: green; /* Color verde */
     font-size: 28px; /* Tamaño del eslogan */
 }
 
@@ -114,7 +114,7 @@ main {
 }
 
 .age {
-    color: #0056b3; /* Color azul para la edad */
+    color: green; /* Color verde para la edad */
     font-size: 14px; /* Tamaño pequeño */
     text-align: center; /* Centra el texto */
 }
